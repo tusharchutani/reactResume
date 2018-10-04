@@ -5,7 +5,8 @@ export class Heading extends Component {
   render() {
     return (
         <h1>
-          <i class={this.props.iconClass ? this.props.iconClass : ''}></i>&nbsp;{this.props.title}
+          {this.props.iconClass && <span/>}
+          {this.props.title}
         </h1>);
   }
 }
@@ -14,7 +15,17 @@ export class Heading extends Component {
 export class SubHeading extends Component {
     
     render() {
+      return (
+        <div>
+          
+          <h2 class="subHeading">
+            {this.props.title}
+            {this.props.link &&            
+            <a class="subHeading" href={this.props.link}>
+              <i class={this.props.iconClass}></i>
+            </a>}
+          </h2>
 
-      return (<h2>{this.props.title}</h2>);
-    }
+      </div>);
   }
+}

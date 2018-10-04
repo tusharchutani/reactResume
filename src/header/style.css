@@ -3,7 +3,8 @@
     background-color:#3F4448;
     flex:1;
     padding-top: 20px;
-    
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .headerContentWrapper{

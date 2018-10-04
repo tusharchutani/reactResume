@@ -7,10 +7,11 @@ class KeyComptency extends Component{
         return (
             <div>
                 <Heading title="Key Comptencies" iconClass="fas fa-briefcase"/>
-                <ul>
-                {this.props.keyCompetencies.map((keyCompetencies)=><li>{keyCompetencies}</li>)}
-                </ul>
-
+                <div class="descriptionContainer">
+                    <ul>
+                        {this.props.keyCompetencies.map((keyCompetencies)=><li>{keyCompetencies}</li>)}
+                    </ul>
+                </div>
             </div>
         );
     }
